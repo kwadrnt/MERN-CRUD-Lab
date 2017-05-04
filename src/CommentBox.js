@@ -19,7 +19,7 @@ class CommentBox extends Component {
       url: this.props.url
     })
     .then((res) => {
-      this.setState({ data: res });
+      this.setState({ data: res.data.comments });
       console.log(res);
     }, (err) => {
       console.log('error', err)
