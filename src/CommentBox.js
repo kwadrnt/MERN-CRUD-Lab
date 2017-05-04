@@ -13,7 +13,7 @@ class CommentBox extends Component {
     return (
       <div style={ style.commentBox }>
         <h2>Comments:</h2>
-      <CommentList data={ DATA }/>
+      <CommentList data={ this.state.data }/>
       <CommentForm />
       </div>
     )
