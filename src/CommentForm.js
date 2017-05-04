@@ -17,7 +17,6 @@ class CommentForm extends Component {
   }
   handleSubmit(e) {
     e.preventDefault();
-    console.log(`${this.state.author} said "${this.state.text}"`)
     let author = this.state.author.trim();
     let text = this.state.text.trim();
     if (!text || !author) {
@@ -26,8 +25,6 @@ class CommentForm extends Component {
     this.props.onCommentSubmit({ author: author, text: text });
     this.setState({ author: '', text: '' });
   }
-    //we will be tying this into the POST method in a bit
-
   render() {
     return (
       <form style={ style.commentForm } onSubmit={ this.handleSubmit }>
@@ -46,7 +43,7 @@ class CommentForm extends Component {
         <input
           type='submit'
           style={ style.commentFormPost }
-          value='Post' />
+          value='Post'/>
       </form>
     )
   }
