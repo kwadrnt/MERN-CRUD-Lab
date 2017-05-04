@@ -5,6 +5,6 @@ import CommentBox from './CommentBox';
 
 //more React code here!
 ReactDOM.render(
-
+  <CommentBox />,
   document.getElementById('root')
 );
