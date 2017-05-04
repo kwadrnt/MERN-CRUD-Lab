@@ -15,7 +15,7 @@ var port = process.env.API_PORT || 3001;
 
 //db config
 //ADD YOUR INFO HERE!
-mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds123351.mlab.com:23351/heroku_t96306zv');
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds123351.mlab.com:23351/mern-comment-box');
 
 //config API to use bodyParser and look for JSON in req.body
 app.use(bodyParser.urlencoded({extended: true }));
